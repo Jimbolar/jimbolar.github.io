@@ -29,6 +29,9 @@ html {
 .container content {
   box-sizing: border-box;
   display: block;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
 }
 
 h1 {
@@ -70,6 +73,8 @@ a:hover {
   content: ' ';
   display: inline-block;
 }
+
+.grayscale { filter: grayscale(100%); }
 
 @keyframes blink-cursor {
   from, to {
