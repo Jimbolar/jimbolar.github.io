@@ -29,9 +29,6 @@ html {
 .container content {
   box-sizing: border-box;
   display: block;
-  animation-duration: 3s;
-  animation-delay: 2s;
-  animation-iteration-count: infinite;
 }
 
 h1 {
