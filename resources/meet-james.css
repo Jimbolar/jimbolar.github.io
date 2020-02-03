@@ -71,7 +71,12 @@ a:hover {
   display: inline-block;
 }
 
-.grayscale { filter: grayscale(100%); }
+.icon-pulse:hover {
+  -webkit-animation: pulse 1s;
+  animation: pulse 1s;
+}
+
+/*.grayscale { filter: grayscale(100%); }*/
 
 @keyframes blink-cursor {
   from, to {
