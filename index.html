@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Meet James</title>
@@ -6,7 +7,7 @@
     <meta name="robots" content="noindex" />
     <meta http-equiv="author" content="James Robinson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" type = "text/css" href = "resources/meet-james.css" />
+    <link href="resources/meet-james.css" rel="stylesheet" id="theme-link">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
@@ -29,12 +30,13 @@
        <a href="mailto:jamsebrobox@gmail.com">jamsebrobox@gmail.com</a>
      </p> -->
        <div class="icons">
-           <a href="https://tmanor-podcast.co.uk" target="_blank"><img src="resources/images/oufc-icon.png" alt="oufc" width="40" height="40" class="icon-pulse"></a>
-           <a href="https://www.linkedin.com/in/james-robinson-26bb6b49/" target="_blank"><img src="resources/images/linkedin-icon.png" alt="linkedin-icon" width="40" height="40" class="icon-pulse"></a>
-           <a href="https://soundcloud.com/jimbolar" target="_blank"><img src="resources/images/soundcloud-icon.png" alt="jimbolar-soundcloud" width="40" height="40" class="icon-pulse"></a>
-           <a href="https://github.com/jimbolar" target="_blank"><img src="resources/images/github-icon.png" alt="github" width="40" height="40" class="icon-pulse"></a>
-           <a href="https://twitter.com/JamSebRob" target="_blank"><img src="resources/images/twitter-icon.png" alt="twitter-icon" width="40" height="40" class="icon-pulse"></a>
+           <a href="https://tmanor-podcast.co.uk" target="_blank"><img src="resources/images/oufc-icon.png" alt="oufc" width="40" height="40" class="icon-pulse" id="icon-change"></a>
+           <a href="https://www.linkedin.com/in/james-robinson-26bb6b49/" target="_blank"><img src="resources/images/linkedin-icon.png" alt="linkedin-icon" width="40" height="40" class="icon-pulse" id="icon-change"></a>
+           <a href="https://soundcloud.com/jimbolar" target="_blank"><img src="resources/images/soundcloud-icon.png" alt="jimbolar-soundcloud" width="40" height="40" class="icon-pulse" id="icon-change"></a>
+           <a href="https://github.com/jimbolar" target="_blank"><img src="resources/images/github-icon.png" alt="github" width="40" height="40" class="icon-pulse" id="icon-change"></a>
+           <a href="https://twitter.com/JamSebRob" target="_blank"><img src="resources/images/twitter-icon.png" alt="twitter-icon" width="40" height="40" class="icon-pulse" id="icon-change"></a>
       </div>
+      <!-- <button class="btn-toggle">Theme</button> -->
     </div>
    </div>
    <script src="resources/typewriter.js"></script>
@@ -42,5 +44,16 @@
        var words = ["Web Development", "Scrum Mastery", "Product Ownership", "Agile", "Project Management", "Design", "Music Production", "Podcasts", "Oxford United", "Gaming", "Cats"];
        var t = new Typewriter(document.getElementById("typewriter"), words);
    </script>
-  </body>
+   <script>
+     const btn = document.querySelector(".btn-toggle");
+     const theme = document.querySelector("#theme-link");
+     btn.addEventListener("click", function() {
+       if (theme.getAttribute("href") == "resources/meet-james.css") {
+         theme.href = "resources/meet-james-2.css";
+       } else {
+         theme.href = "resources/meet-james.css";
+       }
+     });
+   </script>
+ </body>
 </html>
