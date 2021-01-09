@@ -30,6 +30,20 @@ html {
   display: block;
 }
 
+.button-wrap {
+  position: absolute;
+  text-align: right;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.btn-toggle {
+  font-family: Righteous, Serif;
+  font-size: 16px;
+  border-radius: 0.5px;
+}
+
 h1 {
   font-family: Righteous, Serif;
   font-size: 60px;
@@ -71,9 +85,8 @@ a:hover {
   display: inline-block;
 }
 
-.icon-pulse:hover {
-  -webkit-animation: pulse 1s;
-  animation: pulse 1s;
+.btn-toggle:hover {
+  animation: headShake 1s;
 }
 
 @keyframes blink-cursor {

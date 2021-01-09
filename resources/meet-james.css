@@ -30,6 +30,25 @@ html {
   display: block;
 }
 
+.button-wrap {
+  position: absolute;
+  text-align: right;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.btn-toggle {
+  font-family: Righteous, Serif;
+  font-size: 16px;
+  border-radius: 1px;
+  background-color: #ffffb3
+}
+
+.btn-toggle:hover {
+  animation: headShake 1s;
+}
+
 h1 {
   font-family: Righteous, Serif;
   font-size: 60px;
